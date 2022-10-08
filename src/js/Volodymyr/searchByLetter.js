@@ -34,7 +34,7 @@ letterListRef.insertAdjacentHTML('beforeend', markup);
 
 function fetch() {
     return fetchCockt(letter).then(data => {
-
+            console.log('Hello!!!');
         console.log('Data : ', data);
         console.log('Data length: ', data.drinks.length);
         cocktListLength = data.drinks.length;
