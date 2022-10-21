@@ -1,18 +1,18 @@
-.hero-flex{
-    
+.hero-flex {
+
 
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 21px;  
+        column-gap: 21px;
     }
 
     @media screen and (min-width: $desktop) {
-        column-gap: 6px;  
+        column-gap: 6px;
     }
 }
 
-.hero__box{
+.hero__box {
 
     @media screen and (min-width: $tablet) {
         max-width: 346px;
@@ -21,10 +21,10 @@
     @media screen and (min-width: $desktop) {
         max-width: 683px;
     }
-    
+
 }
 
-.hero__title{
+.hero__title {
     width: 300px;
     height: 76px;
     margin-bottom: 28px;
@@ -40,7 +40,7 @@
         line-height: 162%;
     }
 
-     @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         width: 688px;
         height: 160px;
         font-weight: 600;
@@ -49,7 +49,7 @@
     }
 }
 
-.hero-img{
+.hero-img {
     align-items: center;
     margin: auto;
     width: 100%;
@@ -67,7 +67,7 @@
     }
 }
 
-.hero__text{
+.hero__text {
     text-align: center;
     font-weight: 500;
     font-size: 14px;
@@ -83,10 +83,10 @@
     }
 }
 
-.letter-list-first{
+.letter-list-first {
     text-align: center;
 
-    @media screen and(min-width:$tablet){
+    @media screen and(min-width:$tablet) {
         display: flex;
         flex-wrap: wrap;
         max-width: 324px;
@@ -99,29 +99,29 @@
         color: #5F6775;
     }
 
-    @media screen and(min-width:$desktop){
+    @media screen and(min-width:$desktop) {
         max-width: 523px;
         font-size: 24px;
         line-height: 36px;
         margin-top: 47px;
     }
-    
+
 }
 
-.letter{
-    @media screen and(min-width:$tablet){
+.letter {
+    @media screen and(min-width:$tablet) {
         width: 24px;
         height: 25px;
     }
-    
 
-    @media screen and(min-width:$desktop){
+
+    @media screen and(min-width:$desktop) {
         width: 40px;
-        height: 40px;  
+        height: 40px;
     }
 }
 
-.btn-letter{
+.btn-letter {
     text-align: center;
     text-transform: uppercase;
     border: none;
@@ -129,7 +129,7 @@
     color: inherit;
     cursor: pointer;
 
-    @media screen and(min-width:$tablet){
+    @media screen and(min-width:$tablet) {
         // width: 24px;
         // height: 25px;
         font-weight: 700;
@@ -144,39 +144,84 @@
         border: none;
 
         &:hover,
-        &:focus{
+        &:focus {
             color: #FD5103;
-        
+
         }
     }
-      
+
+}
+
+.button-active {
+    color: #FD5103;
+}
+
+.btnLoadM {
+    display: none;
+    text-align: center;
+
+    padding: 8px 16px;
+    margin-top: 20px;
+    margin-left: calc((50%) - 51px);
+    margin-right: auto;
+
+    background-color: #fe7031;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+
+    font-family: $fotn-roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    cursor: pointer;
+
+    transition: box-shadow $timing-function;
+
+    &:hover {
+        background-color: #ffffff;
+        color: #fd5103;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &:active,
+    &:focus {
+        background-color: #fd5103;
+        color: #FCFCFC;
+    }
+
 }
 
 // ABC mobil select!!!!!!!
 
-.app{
+.app {
     position: relative;
     justify-content: center;
 }
 
-.wrap{
+.wrap {
     position: absolute;
     top: 41px;
     right: 35%;
     width: 93px;
 }
 
-.select{
+.select {
     width: 100%;
     position: relative;
 
-    &.open{
-        .select__dropdown{
+    &.open {
+        .select__dropdown {
             display: block;
         }
     }
 
-    &__input{
+    &__input {
         height: 34px;
         border: 1px solid #FD5103;
         border-radius: 4px;
@@ -186,12 +231,12 @@
         padding: 6 10px;
         cursor: pointer;
 
-        @media screen and(min-width:$tablet){
+        @media screen and(min-width:$tablet) {
             display: none;
         }
     }
 
-    &__dropdown{
+    &__dropdown {
         display: none;
         position: absolute;
         top: 34px;
@@ -203,14 +248,14 @@
         overflow-y: auto;
     }
 
-    .letter{
+    .letter {
         flex-direction: row;
         align-items: center;
         padding: 4px 10px;
         gap: 20px;
-        
 
-        &:hover{
+
+        &:hover {
             color: white;
             background-color: #FD5103;
             cursor: pointer;
@@ -218,7 +263,3 @@
         }
     }
 }
-
-
-
-
